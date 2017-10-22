@@ -1,0 +1,140 @@
+html {
+  background-color: #ccc;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  width: 980px;
+  margin: 0 auto;
+  font-size: .88em;
+}
+
+a, a:focus, a:hover, a:active {
+  color: #0c41ab;
+}
+
+.clear {
+  clear: both;
+}
+
+
+#header {
+  z-index:1;
+  background-color: #333;
+  color: #eee;
+  position: relative;
+}
+
+#header #name {
+  float: left;
+  width: 60%;
+  padding-left: 0.5em;
+  font-size: 4em;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#header #coordinates {
+  float: right;
+  width: 30%;
+  padding: 0.5em;
+  font-size: 1.2em;
+  background-color: inherit;
+}
+
+#header #coordinates #addresses {
+  list-style: none;
+}
+
+#header #coordinates #snailmail:before {
+  content: '\2709';
+  vertical-align: top;
+}
+#header #coordinates #office:before {
+  content: '\1f3e2';
+}
+#header #coordinates #email:before {
+  content: '\1f4e7';
+}
+
+#menu {
+}
+
+#menu #menu-list {
+  list-style-type: none;
+}
+
+#menu .menu-item {
+  background: #aaa;
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+  font-size: 1.2em;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1em;
+  margin-left: 0.1em;
+  margin-right: 0.em;
+}
+
+#main {
+  font-size: 1.08em;
+  background-color: #fff;
+  padding: 1em;
+  color: #555;
+}
+
+#main #picture {
+  float: left;
+  width: 150px;
+  margin: 1em 1em 1em 1em;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+#main #main-blurb {
+  margin: 1em 1em 1em 1em;
+  font-size: 1.3em;
+}
+
+#main .section {
+  margin: 1em 1em 1em 1em;
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+}
+
+.section .section-header {
+  font-size: 2em;
+}
+
+.section .section-content {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1em;
+  color: #333;
+}
+
+#projects .projects-list {
+  list-style-type: none;
+}
+
+.publication {
+  padding: 0.5em;
+  width: 80%;
+  margin: 0.3em;
+  border-style: dashed;
+  border-width: 1px 0px 0px 0px;
+}
+.publication .publication-title {
+  font-size: 1.2em;
+  display: inline
+}
+.publication .publication-link {
+  display: inline;
+}
+.publication .publication-authors,.publication-venue,.publication-date,.publication-info {
+  margin-left: 0.9em;
+}

@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>
+    Arjun Radhakrishna's homepage
+  </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Author" content="Arjun Radhakrishna"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+</head>
+
+<body>
+  <div id="header">
+    <div id="name">
+      Arjun Radhakrishna
+    </div>
+    <div id="coordinates">
+      <ul id="addresses">
+        <li id="snailmail"> 
+          <div style="display:inline-block">
+          3330 Walnut St<br/>
+          CIS Dept Levine hall 302<br/>
+          Philadelphia, PA 19104-3409<br/>
+          </div>
+        </li>
+        <li id="office">
+          Towne building 223<br/>
+        </li>
+        <li id="email">
+          <em>arjunrad</em>@seas.upenn.edu
+        </li>
+      </ul>
+    </div>
+    <div class='clear'>
+    </div>
+  </div>
+
+  <div id='menu'>
+    <ul id='menu-list'>
+      <li class='menu-item'> 
+        <a href="#news">News</a>
+      </li>
+      <li class='menu-item'>
+        <a href="#projects">Projects</a>
+      </li>
+      <li class='menu-item'>
+        <a href="#dissertation">Dissertation</a>
+      </li>
+      <li class='menu-item'>
+        <a href="#publications">Publications</a>
+      </li>
+      <li class='menu-item'>
+        <a href=arjunradhakrishna_cv.pdf>[CV]</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <div id="picture">
+      <a href=arjunradhakrishna_cv.pdf>[Curriculum vitae]</a>
+      <img src="images/aradha.jpg" alt="Arjun Radhakrishna"/> 
+    </div>
+    <div id="main-blurb">
+      <b style='color:red; font:2em'>
+	Please use my other email address "firstname.lastname@gmail.com" instead!
+      </b>
+      <br />
+      I am a post-doctoral researcher at the University of Pennsylvania working in the group of 
+      <a href='http://www.cis.upenn.edu/~alur/'>Prof. Rajeev Alur</a>. 
+      Previously, I completed my PhD at <a href='http://www.ist.ac.at'>IST Austria</a> under 
+      the guidance of <a href='http://pub.ist.ac.at/~tah/'>Prof. Thomas A. Henzinger</a>. 
+      Check out my dissertation <a href="#dissertation">here</a>.
+
+      <p>My research area relates to using programming languages and formal methods to help programmers
+      and designers develop reliable, safe, and correct systems. In particular, I have been working
+      heavily on program synthesis. However, I'm interested in all domains of formal methods and rigourous
+      system engineering.
+      
+      <p>My specific interests are in developing tools to handle soft and 
+      quantitative specifications in various domains such as concurrency and embedded systems. Soft
+      specifications are program properties which are desirable, but are not necessary for correctness 
+      (e.g., program performance and energy consumption).
+    </div>
+
+    <div class='clear'>
+    </div>
+
+    <div id='news' class='section'>
+      <div class='section-header'>
+        News
+      </div>
+      <div class='section-content'>
+        <ul>
+          <li>
+            <b style='color:red'>New!</b>
+            Paper on <b>Scaling Enumerative Program Synthesis via Divide and Conquer</b> <a href='publications/tacas2017.pdf'>[pdf]</a>
+            was accepted at TACAS 2017. 
+            The paper contains a full description of a novel, efficient algorithm for the Syntax-Guided Synthesis problem.
+          </li>
+          <li>
+            <b style='color:red'>New!</b>
+            I presented preliminary results on the <b>Synthesis of Interface Specifications for Android Classes</b> at the 
+            <a href='http://researcher.watson.ibm.com/researcher/view_group_subpage.php?id=6940'>IBM PL day 2016</a>.
+            This work is about the automated learning of asynchronous typestate for android framework classes. 
+            Our implementation discovered several unknown bugs in the android framework. 
+            Technical report can be found <a href='publications/android.pdf'>here</a>.
+          </li>
+          <li>
+            <a href='https://bitbucket.org/abhishekudupa/eusolver/'>EUSolver</a> 
+            (built by <a href='https://www.cis.upenn.edu/~audupa/'>Abhishek Udupa</a> and me)
+            performed exceedingly well in the Syntax-guided Synthesis (SyGuS) competition 2016, winning 
+            the "general" and "programming-by-examples" track.
+            EUSolver combines enumerative techniques for program synthesis [Udupa et. al. PLDI 2013] with 
+            unification <a href='#pub-unification'>[CAV 2015]</a>. 
+          </li>
+          <li>
+            <a href='http://pub.ist.ac.at/~rsamanta/'>Roopsha Samanta</a> and I presented a 
+            tutorial on <a href='http://conf.researchr.org/event/POPL-2016/popl-2016-tutorials-aaaa'>
+              Trace-based Synchronization Synthesis for Concurrent Programs</a> at POPL 2016.
+            The tutorial will cover a large part of our work on synthesis for concurrency from the past
+            few years.
+          </li>
+
+          <li>
+            Recent and upcoming service:
+            <ul>
+              <li> CAV 2017: Program Committee. </li>
+              <li> SYNT 2017: Program Committee. </li>
+              <li> (EC)2 2016: Program Committee. </li>
+              <li> SYNT 2016: Program Committee. </li>
+              <li> CAV 2016: External Reviewing Committee. </li>
+              <li> PLDI 2016: External Reviewing Committee. </li>
+              <!--
+              <li> POPL 2015: Artifact Evaluation Committee. </li>
+              <li> SYNT 2015: Program Committee. </li>
+              -->
+            </ul>
+          </li>
+      </div>
+    </div>
+
+
+    <div id='projects' class='section'>
+      <div class='section-header'>
+        Major Projects
+      </div>
+      <div class='section-content'>
+        <ul class='projects-list'>
+          <li class='project'>
+            <strong>Performance-aware Synthesis for Concurrency.</strong>
+            Usable concurrency synthesis has been a long-standing goal, with over three
+            decades of active research going into it. Here, a programmer is expected
+            to write a program that  is correct in a sequential context, and the 
+            synthesizer inserts sufficient synchronization (locks) to make the program 
+            behave correctly in a concurrent setting.
+            However, the issue of performance of the synthesized program has not
+            been fully addressed.
+            In this project, we attempt to address this issue by both optimizing the 
+            synchronization inserted by the synthesizer, and by avoiding synchronization
+            completely by using more "programmer-like" techniques.
+          </li>
+          <li class='project'>
+            <strong>Quantitative Specifications for Reactive Systems.</strong>
+            In this project, we attempt to construct a quantitative specification 
+            framework for analysis of reactive systems. 
+            Our framework is built on a novel notion called simulation distances. A simulation
+            distance measures some aspect of "match" of a given system with respect
+            to a property. The "match" could be anything including a measure of correctness
+            (how often the system violates the property) or robustness (how much can the 
+            system be externally disturbed before it violates the property).
+            We give algorithms to synthesize optimal systems with respect to this quantitative 
+            specifications.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id='dissertation' class='section'>
+      <div class='section-header'>
+        Dissertation
+      </div>
+      <div class='section-content'>
+        <p> The goal of formal methods has long been to produce software or hardware 
+        systems with provable guarantees on correctness. However, not all correct systems
+        are equally desirable and not all incorrect systems are equally undesirable. In 
+        many cases, the notion of desirability of a system can be encoded as a quantity.
+        Example of such quantities include execution time and energy consumption.
+        My dissertation develops techniques for formal verification and synthesis for
+        such quantitative specifications.
+
+        <p> My dissertation was awarded the <strong>2014 ACM SIGBED Paul Caspi Memorial Dissertation Award</strong>.
+        The award is presented annually to the author of an outstanding dissertation in the area of Embedded 
+        Systems to recognize work that significantly advances the state of the art in the science of embedded 
+        systems, in the spirit and legacy of Dr. Paul Caspi's work.
+
+        <div class='publication'>
+          <div class='publication-title'>
+            Quantitative Specifications for Verification and Synthesis
+          </div>
+          <div class='publication-link'>
+            <a href="publications/thesis.pdf">[pdf]</a>
+          </div>
+          <div class='publication-authors'>
+            Arjun Radhakrishna
+          </div>
+          <div class='publication-venue'>
+            PhD Thesis, Institute of Science and Technology, Austria
+          </div>
+          <div class='publication-date'>
+            July 2014
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id='publications' class='section'>
+      <div class='section-header'>
+        Publications
+      </div>
+      <div class='section-content'>
+        [
+        <a href='https://scholar.google.com/citations?user=3fJqC1sAAAAJ&hl=en&oi=ao'>Google Scholar</a>,
+        <a href='http://dblp.uni-trier.de/pers/hd/r/Radhakrishna:Arjun.html'>DBLP</a>
+        ]
+        <div class='publication' id='pub-unification'>
+          <div class='publication-title'>
+            Scaling Enumerative Program Synthesis via Divide and Conquer
+          </div>
+          <div class='publication-link'>
+            <a href="publications/tacas2017.pdf">[pdf]</a>
+          </div>
+          <div class='publication-authors'>
+            Rajeev Alur, Arjun Radhakrishna, and Abhishek Udupa
+          </div>
+          <div class='publication-venue'>
+            TACAS 2017
+          </div>
+        </div>
+        <div class='publication' id='pub-unification'>
+          <div class='publication-title'>
+            Synthesis through Unification
+          </div>
+          <div class='publication-link'>
+            <a href="publications/cav15a.pdf">[pdf]</a>
+          </div>
+          <div class='publication-authors'>
+            Rajeev Alur, Pavol Cerny, and Arjun Radhakrishna 
+          </div>
+          <div class='publication-venue'>
+            CAV 2015
+          </div>
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            From Non-preemptive to Preemptive Scheduling using Synchronization Synthesis
+          </div>
+          <div class='publication-link'>
+            <a href="publications/cav15b.pdf">[pdf]</a>
+          </div>
+          <div class='publication-authors'>
+            Pavol Cerny, Edmund M. Clarke, Thomas A. Henzinger, Arjun Radhakrishna, Leonid Ryzhyk, Roopsha Samanta, and Thorsten Tarrach
+          </div>
+          <div class='publication-venue'>
+            CAV 2015
+          </div>
+          <div class='publication-info'>
+            <strong>Runner-up at the CAV artifact evaluation</strong>
+          </div>
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            Segment Abstraction for Worst-Case Execution Time Analysis
+          </div>
+          <div class='publication-link'>
+            <a href="publications/esop15.pdf">[pdf]</a>
+          </div>
+          <div class='publication-authors'>
+            Pavol Cerny, Thomas A. Henzinger, Laura Kovacs, Arjun Radhakrishna, and Jakob Zwirchmayr
+          </div>
+          <div class='publication-venue'>
+            ESOP 2015
+          </div>
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            Succinct Representation of Concurrent Trace Sets
+          </div>
+          <div class='publication-link'>
+            <a href="publications/popl15.pdf">[pdf]</a>
+          </div>
+          <div class='publication-authors'>
+            Ashutosh Gupta, Thomas A. Henzinger, Arjun Radhakrishna, Roopsha Samanta, and Throsten Tarrach
+          </div>
+          <div class='publication-venue'>
+            POPL 2015
+          </div>
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            Interface Simulation Distances
+          </div>
+          <div class='publication-link'>
+            <a href="publications/tcs2014.pdf">[pdf]</a>
+          </div>
+          <div class='publication-authors'>
+            Pavol Cerny, Martin Chmelik, Thomas Henzinger, and Arjun Radhakrishna <br/> 
+          </div>
+          <div class='publication-venue'>
+            TCS 2014
+          </div>
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            Regression-free Synthesis for Concurrency
+          </div>
+          <div class='publication-link'>
+            <a href="publications/cav14.pdf">[pdf]</a>
+          </div>
+          <div class='publication-authors'>
+            Pavol Cerny, Thomas A. Henzinger, Arjun Radhakrishna, Leonid Ryzhyk, and Throsten Tarrach
+          </div>
+          <div class='publication-venue'>
+            CAV 2014
+          </div>
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            Battery Transition Systems
+          </div>
+          <div class='publication-link'>
+            <a href="publications/popl14.pdf">[pdf]</a>
+          </div>
+          <div class='publication-authors'>
+            Udi Boker, Thomas A. Henzinger, and Arjun Radhakrishna
+          </div>
+          <div class='publication-venue'>
+            POPL 2014
+          </div>
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            Efficient Synthesis for Concurrency using Semantics-Preserving Transformations
+          </div>
+          <div class='publication-link'>
+            <a href="publications/cav13.pdf">[pdf]</a>
+          </div>
+          <div class='publication-authors'>
+            Pavol Cerny, Thomas Henzinger, Arjun Radhakrishna, Leonid Ryzhyk, and Thorsten Tarrach
+          </div>
+          <div class='publication-venue'>
+            CAV 2013 
+          </div>
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            Quantitative Abstraction Refinement
+          </div>
+          <div class='publication-link'>
+            <a href="publications/popl13.pdf">[pdf]</a>
+          </div>
+          <div class='publication-authors'>
+            Pavol Cerny, Thomas Henzinger, and Arjun Radhakrishna
+          </div>
+          <div class='publication-venue'>
+            POPL 2013 
+          </div>
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            Synthesis from Incompatible Specifications
+          </div>
+          <div class='publication-link'>
+            <a href="publications/emsoft12.pdf">[pdf]</a>
+          </div>
+          <div class='publication-authors'>
+            Pavol Cerny, Sivakanth Gopi, Thomas Henzinger, Arjun Radhakrishna, and Nishant Totla
+          </div>
+          <div class='publication-venue'>
+            EMSOFT 2012
+          </div>
+          <div class='publication-info'>
+            <strong>Nominated for the Best Paper award</strong>
+          </div>
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            Interface Simulation Distances
+          </div>
+          <div class='publication-link'>
+            <a href="publications/gandalf12.pdf">[pdf]</a> 
+          </div>
+          <div class='publication-authors'>
+            Pavol Cerny, Martin Chmelik, Thomas Henzinger, and Arjun Radhakrishna
+          </div>
+          <div class='publication-venue'>
+            GANDALF 2012
+          </div>
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            Quantitative Synthesis for Concurrent Programs
+          </div>
+          <div class='publication-link'>
+            <a href="publications/quant_synth.pdf">[pdf]</a> 
+          </div>
+          <div class='publication-authors'>
+            Pavol Cerny, Krishnendu Chatterjee, Thomas Henzinger, Arjun Radhakrishna, and Rohit Singh
+          </div>
+          <div class='publication-venue'>
+            CAV 2011
+          </div>
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            Simulation Distances
+          </div>
+          <div class='publication-link'>
+            <a href="publications/simulation_distances.pdf">[pdf]</a> 
+          </div>
+          <div class='publication-authors'>
+            Pavol Cerny, Thomas Henzinger, and Arjun Radhakrishna
+          </div>
+          <div class='publication-venue'>
+            CONCUR 2010.
+          </div>
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            Model Checking of Linearizability of Concurrent List Implementations
+          </div>
+          <div class='publication-link'>
+            <a href="publications/concurrent_lists.pdf">[pdf]</a> 
+          </div>
+          <div class='publication-authors'>
+            Pavol Cerny, Arjun Radhakrishna, Damien Zufferey, Swarat Chaudhuri, and Rajeev Alur 
+          </div>
+          <div class='publication-venue'>
+            CAV 2010
+          </div>
+          <!-- <a href="http://pub.ist.ac.at/~cernyp/colt/"> [project page]</a> -->
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            Quantitative Simulation Games
+          </div>
+          <div class='publication-link'>
+            <a href="publications/quantitative_simulation_games.pdf">[pdf]</a> 
+          </div>
+          <div class='publication-authors'>
+            Pavol Cerny, Thomas A. Henzinger, and Arjun Radhakrishna
+          </div>
+          <div class='publication-venue'>
+            Essays in Memory of Amir Pnueli, 2010
+          </div>
+        </div>
+        <div class='publication'>
+          <div class='publication-title'>
+            GIST: A Solver for Probabilistic Games
+          </div>
+          <div class='publication-link'>
+            <a href="publications/gist.pdf">[pdf]</a> 
+          </div>
+          <div class='publication-authors'>
+            Krishnendu Chatterjee, Thomas A. Henzinger, Barbara Jobstmann, and Arjun Radhakrishn
+          </div>
+          <div class='publication-venue'>
+            CAV 2010
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+var sc_project=10162322; 
+var sc_invisible=1; 
+var sc_security="7795d4dd"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+    "https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+  </script>
+  <noscript>
+    <div class="statcounter">
+      <a title="hit counter" href="http://statcounter.com/" target="_blank">
+        <img class="statcounter"
+            src="http://c.statcounter.com/10162322/0/7795d4dd/1/"
+            alt="hit counter">
+      </a>
+    </div>
+  </noscript>
+</body>
+
+</html>
+
+
